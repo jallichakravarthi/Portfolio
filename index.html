@@ -4,88 +4,284 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jalli Chakravarthi | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.3rem;
+    }
+
+    header p {
+      margin: 8px 0;
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #93c5fd;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 3px solid #2563eb;
+      display: inline-block;
+      margin-bottom: 25px;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      padding: 4px 8px;
+      margin: 4px 4px 0 0;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <h1>Jalli Chakravarthi</h1>
-    <p>Final-year Information Technology Student | Java Full Stack Developer</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a final-year Information Technology student with a strong passion for backend development, 
-      problem-solving, and building full-stack applications. With hands-on experience in Spring Boot and the MERN stack, 
-      I bring a practical understanding of REST APIs, database design, and UI development.
-    </p>
-  </section>
+<header>
+  <h1>Jalli Chakravarthi</h1>
+  <p>Final-year Information Technology Student | Java Full Stack Developer</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="projects">
-    <h2>Projects</h2>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Entry-level Software Engineer with strong foundations in Java, Object-Oriented Programming,
+    Data Structures, SQL, and RESTful web services. Experienced in developing Java-based applications
+    using Spring Boot, Hibernate, and MySQL, with hands-on exposure to SDLC, debugging, and API testing.
+    Passionate about backend development and building scalable full-stack systems.
+  </p>
+</section>
 
-    <div class="project">
-      <h3>Media Virality Simulation Web App</h3>
-      <p>
-        Simulates media spread from CSV uploads with viral score reports and a backend built in Spring Boot.
-        <br><strong>Tech Stack:</strong> Java, Spring Boot, Tailwind CSS, JavaScript
-      </p>
-    </div>
+<section id="projects">
+  <h2>Academic & Personal Projects</h2>
+  <div id="projectContainer"></div>
+</section>
 
-    <div class="project">
-      <h3>MERN Watchlist Web App</h3>
-      <p>
-        Built a full-stack media watchlist app with secure login, OTP verification, token-based auth, and dashboard.
-        <br><strong>Tech Stack:</strong> MongoDB, Express.js, React.js, Node.js
-      </p>
-    </div>
+<section id="skills">
+  <h2>Skills</h2>
+  <div id="skillsContainer"></div>
+</section>
 
-    <div class="project">
-      <h3>Python Chess Engine</h3>
-      <p>
-        Chess engine supporting PvP, PvAI, and AIvAI using Minimax and Alpha-Beta Pruning with a Pygame UI.
-        <br><strong>Tech Stack:</strong> Python, Pygame, Minimax
-      </p>
-    </div>
-  </section>
+<section id="education">
+  <h2>Education</h2>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Java, Python, C++</li>
-      <li><strong>Frontend:</strong> HTML, CSS, React.js, JavaScript, Tailwind CSS</li>
-      <li><strong>Backend & DB:</strong> Node.js, Express.js, Spring Boot, REST APIs, MongoDB, MySQL</li>
-      <li><strong>Tools:</strong> Git, GitHub, VS Code, Nodemailer</li>
-    </ul>
-  </section>
+  <div class="card">
+    <h3>Prasad V. Potluri Siddhartha Institute of Technology</h3>
+    <p>B.Tech in Information Technology (2022 – 2026)</p>
+    <p><strong>CGPA:</strong> 8.2 / 10</p>
+  </div>
 
-  <section id="certifications">
-    <h2>Certifications & Courses</h2>
-    <ul>
-      <li>Cybersecurity Virtual Internship – AICTE (Jan–Mar 2024)</li>
-      <li>AI-ML Virtual Internship – AWS/AICTE (Sep–Nov 2023)</li>
-      <li>ReactJS – Infosys Springboard (Feb 2025)</li>
-      <li>Programming through Java – NPTEL (Jan–Apr 2024)</li>
-    </ul>
-  </section>
+  <div class="card">
+    <h3>Narayana Junior College, Vijayawada</h3>
+    <p>Intermediate (MPC) — 91.1% (2020 – 2022)</p>
+  </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 Vijayawada, Andhra Pradesh, India</p>
-    <p>📞 <a href="tel:+916305064706">+91 6305064706</a></p>
-    <p>✉️ <a href="mailto:jallichakravarthi07@gmail.com">jallichakravarthi07@gmail.com</a></p>
-    <p>🔗 <a href="https://github.com/jallichakravarthi">GitHub</a> | 
-             <a href="https://linkedin.com/in/chakravarthi-jalli-8080a9357">LinkedIn</a></p>
-  </section>
+  <div class="card">
+    <h3>Sri Chaitanya School, Vijayawada</h3>
+    <p>SSC Board — 91.66% (2019 – 2020)</p>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Jalli Chakravarthi</p>
-  </footer>
+<section id="certifications">
+  <h2>Certifications & Achievements</h2>
+  <div id="certContainer"></div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>📍 Vijayawada, Andhra Pradesh, India</p>
+  <p>📧 <a href="mailto:jallichakravarthi07@gmail.com">jallichakravarthi07@gmail.com</a></p>
+  <p>📞 <a href="tel:+916305064706">+91 6305064706</a></p>
+  <p>
+    🔗 <a href="https://github.com/jallichakravarthi" target="_blank">GitHub</a> |
+    <a href="https://linkedin.com/in/chakravarthi-jalli-8080a9357" target="_blank">LinkedIn</a>
+  </p>
+</section>
+
+<footer>
+  © 2025 Jalli Chakravarthi
+</footer>
+
+<script>
+  /* ===== PROJECTS ===== */
+  const projects = [
+    {
+      title: "Online Gaming Platform",
+      desc: [
+        "Built a browser-based platform hosting Chess, Tic Tac Toe, and Connect Four",
+        "Developed REST APIs for user management, game sessions, and score tracking",
+        "Applied Spring Security and MVC architecture with MySQL persistence"
+      ],
+      tech: ["Java", "Spring Boot", "Spring Security", "REST APIs", "MySQL"]
+    },
+    {
+      title: "Employee Management System",
+      desc: [
+        "Implemented a CRUD-based employee management system",
+        "Applied Hibernate/JPA for ORM and layered MVC architecture"
+      ],
+      tech: ["Java", "Spring Boot", "Hibernate", "MySQL"]
+    },
+    {
+      title: "Attendance Management System",
+      desc: [
+        "Designed a system to track attendance records and reports",
+        "Developed REST APIs for attendance logging and retrieval"
+      ],
+      tech: ["Java", "Spring Boot", "REST APIs", "MySQL"]
+    },
+    {
+      title: "Room Stat Tracker (Smart Room Monitor)",
+      desc: [
+        "Engineered an IoT-based monitoring system using Raspberry Pi sensors",
+        "Provisioned REST APIs for real-time data ingestion and historical analysis"
+      ],
+      tech: ["MERN Stack", "REST APIs", "Raspberry Pi", "MongoDB"]
+    },
+    {
+      title: "MERN Watchlist Web App",
+      desc: [
+        "Built a full-stack media watchlist app with authentication and dashboards",
+        "Implemented secure login with OTP verification and token-based authentication"
+      ],
+      tech: ["MongoDB", "Express.js", "React.js", "Node.js"]
+    }
+  ];
+
+  const projectContainer = document.getElementById("projectContainer");
+
+  projects.forEach(p => {
+    const div = document.createElement("div");
+    div.className = "card";
+
+    div.innerHTML = `
+      <h3>${p.title}</h3>
+      <ul>
+        ${p.desc.map(d => `<li>${d}</li>`).join("")}
+      </ul>
+      ${p.tech.map(t => `<span class="tag">${t}</span>`).join("")}
+    `;
+
+    projectContainer.appendChild(div);
+  });
+
+  /* ===== SKILLS ===== */
+  const skills = {
+    "Programming Languages": ["Java", "Python", "C++", "SQL"],
+    "Core Java": ["OOP", "Collections", "Exception Handling", "Multithreading"],
+    "Web & Backend": ["Spring Boot", "Hibernate/JPA", "REST APIs", "HTTP", "JSON"],
+    "Databases": ["MySQL", "MongoDB"],
+    "Tools": ["Git", "Postman", "VS Code"]
+  };
+
+  const skillsContainer = document.getElementById("skillsContainer");
+
+  for (const category in skills) {
+    const div = document.createElement("div");
+    div.className = "card";
+
+    div.innerHTML = `
+      <h3>${category}</h3>
+      ${skills[category].map(s => `<span class="tag">${s}</span>`).join("")}
+    `;
+
+    skillsContainer.appendChild(div);
+  }
+
+  /* ===== CERTIFICATIONS ===== */
+  const certs = [
+    "JPMorgan Chase & Co – Software Engineering Job Simulation (Forage) – Jan 2026",
+    "AI-ML Virtual Internship – AWS (AICTE) – Sep–Nov 2023",
+    "Programming through Java – NPTEL – Jan–Apr 2024",
+    "Algothon – 1st Prize, PVPSIT 2025",
+    "Code N Earn – 1st Prize, PVPSIT 2025"
+  ];
+
+  const certContainer = document.getElementById("certContainer");
+
+  certs.forEach(c => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.textContent = c;
+    certContainer.appendChild(div);
+  });
+</script>
+
 </body>
 </html>
